@@ -1,27 +1,23 @@
 <?php
-// ==========================================================
-// BLOC DE DADES (al capdamunt del fitxer)
-// ==========================================================
- 
-// --- Constants de configuració de la botiga ---
+
 define('BOTIGA', 'Tienda Online Guay');
 define('MONEDA', 'Euros');
-define('IVA', 0.21);              // 21%
-const DESCOMPTE_SOCI = 0.10;      // 10% de descompte per a socis
+define('IVA', 0.21);              
+const DESCOMPTE_SOCI = 0.10;      
  
-// --- Dades del producte ---
+
 $nomProducte        = 'Camiseta Guay';
 $descripcioProducte = 'Camiseta chupi guay';
 $preuSenseIva       = 99.99;
 $unitatsDisponibles = 5;
 $referencia         = 'CAM-1425376';
  
-// --- Càlculs automàtics (ja no cal escriure'ls a mà) ---
+
 $importIva = $preuSenseIva * IVA;
 $total     = $preuSenseIva + $importIva;
 ?>
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
