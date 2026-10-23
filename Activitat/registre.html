@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+    <div id="caja1">
+        <form action="processa.php" method="post">
+            <div id="caja2">
+
+                <fieldset>
+                    <legend>Dades personals</legend>
+                    <div id="caja3" class="grid">
+                        <div>
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+                        <div>
+                            <label for="cognoms">Cognoms</label>
+                            <input type="text" id="cognoms" name="cognoms">
+                        </div>
+                        <div>
+                            <label for="naixement">Data de naixement</label>
+                            <input type="date" id="naixement" name="naixement">
+                        </div>
+                        <div>
+                            <label for="telefono">Telèfon</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dades del compte</legend>
+                    <div id="caja4" class="grid">
+                        <div>
+                            <label for="correu">Correu</label>
+                            <input type="email" id="correu" name="correu">
+                        </div>
+                        <div>
+                            <label for="nomusu">Nom d'usuari</label>
+                            <input type="text" id="nomusu" name="nomusu">
+                        </div>
+                        <div>
+                            <label for="contrasenya">Contrasenya</label>
+                            <input type="password" id="contrasenya" name="contrasenya">
+                        </div>
+                        <div>
+                            <label for="repetircontrasenya">Repetir contrasenya</label>
+                            <input type="password" id="repetircontrasenya" name="repetircontrasenya">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adreça</legend>
+                    <div id="caja5" class="grid">
+                        <div class="ancho-completo">
+                            <label for="Carrerinúmero">Carrer i número</label>
+                            <input type="text" id="Carrerinúmero" name="Carrerinúmero">
+                        </div>
+                        <div>
+                            <label for="poblacio">Població</label>
+                            <input type="text" id="poblacio" name="poblacio">
+                        </div>
+                        <div>
+                            <label for="codipostal">Codi postal</label>
+                            <input type="number" id="codipostal" name="codipostal">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <label>Tipo de cliente
+                    <select name="tipo">
+                        <option>Particular</option>
+                        <option>Empresa</option>
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>¿Cómo nos has conocido?</legend>
+                    <div id="caja6">
+                        <label><input type="radio" name="origen" value="web"> Web</label>
+                        <label><input type="radio" name="origen" value="amigos"> Amigos</label>
+                        <label><input type="radio" name="origen" value="redes"> Redes sociales</label>
+                    </div>
+                </fieldset>
+
+                <label><input type="checkbox" name="newsletter"> Quiero recibir el boletín</label>
+                <label><input type="checkbox" name="condiciones" required> Acepto las condiciones</label>
+
+                <button id="boton" type="submit">Crear el compte</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

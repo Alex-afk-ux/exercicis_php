@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Que tots els camps facin la mateixa amplada */
+input[type="text"], input[type="email"], input[type="password"],
+input[type="date"], input[type="tel"], select {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+ 
+/* Files alternes de la taula del resum */
+tr:nth-child(even) td { background: #F4F7F7; }
+
+
+#caja1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+#caja2 {
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+/* Dos columnas en los bloques de datos */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin: 0;
+}
+
+.ancho-completo {
+    grid-column: 1 / -1;
+}
+
+#boton:hover{
+    color:white;
+    background-color: black;
+}
+#caja6 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+}
+
+#boton {
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: white;
+    width: 120px;
+    padding: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    padding-top: 8px;
+}
+
