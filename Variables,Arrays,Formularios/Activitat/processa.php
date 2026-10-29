@@ -13,7 +13,7 @@ $usuari = [
     'nomusu'   => trim($_POST['nomusu'] ?? ''),
     'Carrerinúmero'   => trim($_POST['Carrerinúmero'] ?? ''),
     'poblacio'   => trim($_POST['poblacio'] ?? ''),
-    'codipostal'   => trim($_POST['codipostal'] ?? ''),
+    'codi postal'   => trim($_POST['codi postal'] ?? ''),
     'origen' =>  ($_POST['origen'] ?? ''),
     'newsletter' => isset($_POST['newsletter'] )? 'Si' : 'No',
     'condiciones'   => isset($_POST['condiciones']) ? 'Si' : 'No',
@@ -43,15 +43,15 @@ if ($usuari['nomusu'] === ''){
     $errors[] = 'L\'apodo ha de tenir com a mínim 3 caràcters.';
 }
 
-if(strlen($contrasenya) < 6){
+if(strlen($contrasenya) < 6){   
     $errors[] = 'La contrasenya te que tindre 6 caracters minim';
 }
 if($contrasenya !== $repetircontrasenya){
     $errors[] = 'La contrasenya tiene que ser la misma';
 } 
 
-if ($usuari['codipostal'] !== '' &&
-    !preg_match('/^[0-9]{5}$/', $usuari['codipostal'])) {
+if ($usuari['codi postal'] !== '' &&
+    !preg_match('/^[0-9]{5}$/', $usuari['codi postal'])) {
     $errors[] = 'El codi postal ha de tenir exactament 5 xifres.';
 }
 
