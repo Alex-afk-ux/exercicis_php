@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202938;
+    background: #f2f5f9;
+}
+
+.contenidor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.capcalera {
+    padding: 34px;
+    margin-bottom: 28px;
+    border-radius: 14px;
+    color: white;
+    background: #23395d;
+}
+
+.capcalera h1 {
+    margin: 5px 0;
+    font-size: 38px;
+}
+
+.capcalera p {
+    margin-bottom: 0;
+    color: #e0e8f5;
+}
+
+.capcalera .sobre-titol {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+section {
+    margin: 26px 0;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: #23395d;
+}
+
+.resum {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.dada-resum {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px;
+    border: 1px solid #dce3ed;
+    border-radius: 10px;
+    background: white;
+}
+
+.dada-resum span {
+    color: #65738a;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.dada-resum strong {
+    font-size: 22px;
+}
+
+.graella {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.targeta {
+    padding: 20px;
+    border: 1px solid #dce3ed;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(30, 50, 80, 0.06);
+}
+
+.targeta h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #23395d;
+}
+
+.targeta p {
+    margin: 9px 0;
+}
+
+.targeta .categoria {
+    color: #65738a;
+    font-size: 13px;
+}
+
+.targeta .estat {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #edf2f8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.missatge {
+    padding: 16px;
+    border: 1px solid #f0d8a8;
+    border-radius: 8px;
+    background: #fff8e9;
+    color: #795719;
+}
+
+.peu {
+    margin-top: 34px;
+    padding: 18px;
+    color: #65738a;
+    text-align: center;
+    border-top: 1px solid #dce3ed;
+}
+
+@media (max-width: 760px) {
+    .resum {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .graella {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .resum,
+    .graella {
+        grid-template-columns: 1fr;
+    }
+}
