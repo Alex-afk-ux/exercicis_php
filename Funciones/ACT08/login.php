@@ -46,10 +46,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $titolPagina = 'Iniciar sessió';
 require 'header.php';
 ?>
-
-        <h2>Entra al teu compte</h2>
-        <pre><?php print_r($_SESSION); ?></pre>
-
 <?php if (count($errors) > 0): ?>
         <div class="errors">
             <ul>
@@ -70,5 +66,5 @@ require 'header.php';
             <button type="submit">Entrar</button>
         </form>
 
-<?php
+<?php   
 require 'footer.php';

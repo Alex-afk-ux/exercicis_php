@@ -1,0 +1,47 @@
+[
+    {
+        "nom": "Aina",
+        "cognoms": "Puig Vallès",
+        "naixement": "1999-03-14",
+        "telefono": "600111222",
+        "correu": "aina@example.cat",
+        "nomusu": "ainapuig",
+        "carrer": "Carrer Major, 12",
+        "poblacio": "Sabadell",
+        "codipostal": "08201",
+        "origen": "web",
+        "newsletter": "Si",
+        "condiciones": "Si",
+        "tipo": "particular"
+    },
+    {
+        "nom": "Marc",
+        "cognoms": "Soler Camí",
+        "naixement": "1995-11-02",
+        "telefono": "600333444",
+        "correu": "marc@example.cat",
+        "nomusu": "marcsoler",
+        "carrer": "Av. Francesc Macià, 5, 2n 1a",
+        "poblacio": "Terrassa",
+        "codipostal": "08221",
+        "origen": "amigos",
+        "newsletter": "No",
+        "condiciones": "Si",
+        "tipo": "empresa"
+    },
+    {
+        "nom": "Núria",
+        "cognoms": "Ferrer Roig",
+        "naixement": "2001-07-25",
+        "telefono": "600555666",
+        "correu": "nuria@example.cat",
+        "nomusu": "nuriaf",
+        "carrer": "Plaça de l'Església, 3",
+        "poblacio": "Cerdanyola del Vallès",
+        "codipostal": "08290",
+        "origen": "redes",
+        "newsletter": "Si",
+        "condiciones": "Si",
+        "tipo": "particular"
+    }
+]

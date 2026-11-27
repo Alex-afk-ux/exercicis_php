@@ -1,0 +1,4 @@
+nom,cognoms,naixement,telefono,correu,nomusu,carrer,poblacio,codipostal,origen,newsletter,condiciones,tipo
+Aina,Puig Vallès,1999-03-14,600111222,aina@example.cat,ainapuig,"Carrer Major, 12",Sabadell,08201,web,Si,Si,particular
+Marc,Soler Camí,1995-11-02,600333444,marc@example.cat,marcsoler,"Av. Francesc Macià, 5, 2n 1a",Terrassa,08221,amigos,No,Si,empresa
+Núria,Ferrer Roig,2001-07-25,600555666,nuria@example.cat,nuriaf,"Plaça de l'Església, 3",Cerdanyola del Vallès,08290,redes,Si,Si,particular
